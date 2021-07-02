@@ -1,7 +1,7 @@
 NAME	= serialize
-SRC		= main.cpp Data.cpp
+SRC		= main.cpp
 OBS		= $(SRC:.cpp=.o)
-FLAGS	= #-Wall -Wextra -Werror
+FLAGS	= -Wall -Wextra -Werror -fsanitize=address
 INC		= -I.
 HED		= Data.hpp
 CC		= clang++
